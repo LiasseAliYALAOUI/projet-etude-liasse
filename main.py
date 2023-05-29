@@ -152,9 +152,9 @@ def mail(piecejointes):
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = toaddr
-    msg['Subject'] = "RAPPORT SCAN - ROMAIN PERRI"
+    msg['Subject'] = "Script Liasse Ali Yalaoui "
 
-    body = "Bonjour, vous trouverez le rapport en pièce jointe"
+    body = "Bonjour, vous trouverez le rapport du scan en pièce jointe"
     msg.attach(MIMEText(body, 'plain'))
 
     for piecejointe in piecejointes:
@@ -195,4 +195,5 @@ def cve_recente(cve_count):
 
 #Lancement de la fonction qui initialise le script
 choisir_programme()
+
 
